@@ -17,7 +17,8 @@
       111222,
       1111123
     ],
-    "Acceso": "usuario"
+    "Acceso": "usuario",
+    "Cant_Ordenes": 1
   },
   {
     "Username": "admin",
@@ -37,7 +38,8 @@
       111222,
       1111123
     ],
-    "Acceso": "admin"
+    "Acceso": "admin",
+    "Cant_Ordenes": 7
   },
   {
     "Username": "chef1",
@@ -57,7 +59,8 @@
       111222,
       1111123
     ],
-    "Acceso": "chef"
+    "Acceso": "chef",
+    "Cant_Ordenes": 9
   },
   {
     "Username": "chef2",
@@ -77,6 +80,175 @@
       111222,
       1111123
     ],
-    "Acceso": "chef"
+    "Acceso": "chef",
+    "Cant_Ordenes": 4
+  },
+  {
+    "Username": "usuario2",
+    "Password": "cafe",
+    "Nombre": "Leonardo",
+    "Apellido": "Guillen",
+    "Cedula": 1222222,
+    "Direcciones": [
+      {
+        "Provincia": "Cartago",
+        "Canton": "Central",
+        "Distrito": "Orea"
+      }
+    ],
+    "Fecha_nacimiento": "2000-04-29T00:00:00",
+    "Telefonos": [
+      111222,
+      1111123
+    ],
+    "Acceso": "usuario",
+    "Cant_Ordenes": 21
+  },
+  {
+    "Username": "admin2",
+    "Password": "coco",
+    "Nombre": "Leonardo",
+    "Apellido": "Guillen",
+    "Cedula": 1222222,
+    "Direcciones": [
+      {
+        "Provincia": "Cartago",
+        "Canton": "Central",
+        "Distrito": "Orea"
+      }
+    ],
+    "Fecha_nacimiento": "2000-04-29T00:00:00",
+    "Telefonos": [
+      111222,
+      1111123
+    ],
+    "Acceso": "admin",
+    "Cant_Ordenes": 17
+  },
+  {
+    "Username": "chef3",
+    "Password": "12345",
+    "Nombre": "Alberto",
+    "Apellido": "Guzman",
+    "Cedula": 122222233,
+    "Direcciones": [
+      {
+        "Provincia": "Cartago",
+        "Canton": "Central",
+        "Distrito": "Orea"
+      }
+    ],
+    "Fecha_nacimiento": "2000-04-29T00:00:00",
+    "Telefonos": [
+      111222,
+      1111123
+    ],
+    "Acceso": "chef",
+    "Cant_Ordenes": 6
+  },
+  {
+    "Username": "chef4",
+    "Password": "12345",
+    "Nombre": "Leonardo",
+    "Apellido": "Guillen",
+    "Cedula": 0,
+    "Direcciones": [
+      {
+        "Provincia": "Cartago",
+        "Canton": "Central",
+        "Distrito": "Orea"
+      }
+    ],
+    "Fecha_nacimiento": "2000-04-29T00:00:00",
+    "Telefonos": [
+      111222,
+      1111123
+    ],
+    "Acceso": "chef",
+    "Cant_Ordenes": 20
+  },
+  {
+    "Username": "usuario3",
+    "Password": "cafe",
+    "Nombre": "Leonardo",
+    "Apellido": "Guillen",
+    "Cedula": 1222222,
+    "Direcciones": [
+      {
+        "Provincia": "Cartago",
+        "Canton": "Central",
+        "Distrito": "Orea"
+      }
+    ],
+    "Fecha_nacimiento": "2000-04-29T00:00:00",
+    "Telefonos": [
+      111222,
+      1111123
+    ],
+    "Acceso": "usuario",
+    "Cant_Ordenes": 9
+  },
+  {
+    "Username": "admin3",
+    "Password": "coco",
+    "Nombre": "Leonardo",
+    "Apellido": "Guillen",
+    "Cedula": 1222222,
+    "Direcciones": [
+      {
+        "Provincia": "Cartago",
+        "Canton": "Central",
+        "Distrito": "Orea"
+      }
+    ],
+    "Fecha_nacimiento": "2000-04-29T00:00:00",
+    "Telefonos": [
+      111222,
+      1111123
+    ],
+    "Acceso": "admin",
+    "Cant_Ordenes": 7
+  },
+  {
+    "Username": "chef5",
+    "Password": "12345",
+    "Nombre": "Alberto",
+    "Apellido": "Guzman",
+    "Cedula": 122222233,
+    "Direcciones": [
+      {
+        "Provincia": "Cartago",
+        "Canton": "Central",
+        "Distrito": "Orea"
+      }
+    ],
+    "Fecha_nacimiento": "2000-04-29T00:00:00",
+    "Telefonos": [
+      111222,
+      1111123
+    ],
+    "Acceso": "chef",
+    "Cant_Ordenes": 5
+  },
+  {
+    "Username": "chef6",
+    "Password": "12345",
+    "Nombre": "Leonardo",
+    "Apellido": "Guillen",
+    "Cedula": 0,
+    "Direcciones": [
+      {
+        "Provincia": "Cartago",
+        "Canton": "Central",
+        "Distrito": "Orea"
+      }
+    ],
+    "Fecha_nacimiento": "2000-04-29T00:00:00",
+    "Telefonos": [
+      111222,
+      1111123
+    ],
+    "Acceso": "chef",
+    "Cant_Ordenes": 14
   }
 ]

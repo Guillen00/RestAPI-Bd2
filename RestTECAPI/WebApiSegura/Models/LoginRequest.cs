@@ -31,6 +31,7 @@ namespace Tarea1_API.Models
         public DateTime Fecha_nacimiento { get; set; }
         public List<int> Telefonos { get; set; }
         public string Acceso { get; set; }
+        public int Cant_Ordenes { get; set; }
 
 
     }
@@ -44,6 +45,7 @@ namespace Tarea1_API.Models
         public int Calorias { get; set; }
         public string Tipo { get; set; }
         public int Ventas { get; set; }
+        public int Feedback { get; set; }
 
     }
 

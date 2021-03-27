@@ -111,6 +111,95 @@ namespace Tarea1_API.Controllers
             return Ok("Platillo no se ha encontrado");
         }
 
-        
+        //Muestra una lista con el top de platos mas vendidos
+        [HttpGet]
+        [Route("top_vendidos")]
+        public IHttpActionResult top_vendidos()
+        {
+            List<Platos> platos_base = DataBases.JsonController.DeserializeJsonFilePlatos(DataBases.JsonController.GetPlatosFromJson());
+            List<Platos> platos_base2 = new List<Platos> { };
+            // List<Platos> platos_base3 = new List<Platos> { };
+            IOrderedEnumerable<Platos> platos_base3 = platos_base.OrderByDescending(x => x.Ventas);
+            
+
+            int i = 0;
+            while (platos_base2.Count < 10)
+            {
+                platos_base2.Add(platos_base3.ElementAt(i));
+
+                i++;
+            }
+
+
+            return Ok(platos_base2);
+        }
+
+        //Muestra una lista con el top de platos con mas ganacia
+        [HttpGet]
+        [Route("top_ganancias")]
+        public IHttpActionResult top_ganancias()
+        {
+            List<Platos> platos_base = DataBases.JsonController.DeserializeJsonFilePlatos(DataBases.JsonController.GetPlatosFromJson());
+            List<Platos> platos_base2 = new List<Platos> { };
+            // List<Platos> platos_base3 = new List<Platos> { };
+            IOrderedEnumerable<Platos> platos_base3 = platos_base.OrderByDescending(x => (x.Ventas*x.Precio));
+
+
+            int i = 0;
+            while (platos_base2.Count < 10)
+            {
+                platos_base2.Add(platos_base3.ElementAt(i));
+
+                i++;
+            }
+
+
+            return Ok(platos_base2);
+        }
+
+        //Muestra una lista con el top de platos con mas feedback
+        [HttpGet]
+        [Route("top_feedback")]
+        public IHttpActionResult top_feedback()
+        {
+            List<Platos> platos_base = DataBases.JsonController.DeserializeJsonFilePlatos(DataBases.JsonController.GetPlatosFromJson());
+            List<Platos> platos_base2 = new List<Platos> { };
+            // List<Platos> platos_base3 = new List<Platos> { };
+            IOrderedEnumerable<Platos> platos_base3 = platos_base.OrderByDescending(x => x.Feedback);
+
+
+            int i = 0;
+            while (platos_base2.Count < 10)
+            {
+                platos_base2.Add(platos_base3.ElementAt(i));
+
+                i++;
+            }
+
+
+            return Ok(platos_base2);
+        }
+        //Muestra una lista con el top de usuarios con mas ordenes
+        [HttpGet]
+        [Route("top_ordenes")]
+        public IHttpActionResult top_ordenes()
+        {
+            List<Usuarios> login_base = DataBases.JsonController.DeserializeJsonFileLogin(DataBases.JsonController.GetLoginFromJson());
+            List<Usuarios> login_base2 = new List<Usuarios> { };
+            // List<Platos> platos_base3 = new List<Platos> { };
+            IOrderedEnumerable<Usuarios> login_base3 = login_base.OrderByDescending(x => x.Cant_Ordenes);
+
+
+            int i = 0;
+            while (login_base2.Count < 10)
+            {
+                login_base2.Add(login_base3.ElementAt(i));
+
+                i++;
+            }
+
+
+            return Ok(login_base2);
+        }
     }
 }

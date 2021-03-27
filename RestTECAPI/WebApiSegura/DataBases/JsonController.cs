@@ -11,9 +11,9 @@ namespace Tarea1_API.DataBases
 {
     public class JsonController
     {
-        private static string path_usuario = @"C:\Users\leona\Downloads\RestTECAPI\WebApiSegura\DataBases\Usuarios.json";
-        private static string path_plato = @"C:\Users\leona\Downloads\RestTECAPI\WebApiSegura\DataBases\Plato.json";
-        private static string path_pedidos = @"C:\Users\leona\Downloads\RestTECAPI\WebApiSegura\DataBases\Pedidos.json";
+        private static string path_usuario = @"C:\Users\leona\Source\Repos\RestAPI-Bd2\RestTECAPI\WebApiSegura\DataBases\Usuarios.json";
+        private static string path_plato = @"C:\Users\leona\Source\Repos\RestAPI-Bd2\RestTECAPI\WebApiSegura\DataBases\Plato.json";
+        private static string path_pedidos = @"C:\Users\leona\Source\Repos\RestAPI-Bd2\RestTECAPI\WebApiSegura\DataBases\Pedidos.json";
         // (Login) Pasa el archivo a un string 
         public static string GetLoginFromJson()
         {
